@@ -24,4 +24,4 @@ This document compiles practical notes, memory layouts, structure offsets, and s
 
 - **Target Environment**: Linux (`x86_64`) and `glibc` internals across pre- and post-`2.30` / `2.43` behavior.
 - **Methodology**: Empirical verification using GDB (`gef` / `pwndbg` / `peda`), `pwntools`, and local proof-of-concept test harnesses.
-- **Formatting**: Standard Markdown with hyphens (`-`) for lists and fenced code blocks for C snippets, disassembly, and memory dumps.
+- **Formatting**: Standard Markdown with fenced code blocks for C snippets, disassembly, and memory dumps.
