@@ -1380,7 +1380,7 @@ It means that next use of `stdin` `_IO_FILE` (`scanf`, `getchar`, `fgets` etc.) 
 
 As you can see, after putting null byte to the `0x7ffff7bc18f8`, another fields like `read_base`, `read_end`, `read_ptr` (and `write_base`/`end`/`ptr`) were synchronized and became equal to `base_buf`.
 
-And if we'll put address larger than `_IO_2_1_stdout_.buf_end`, for example it's address `+ 0x1000`,
+And if we'll put address larger than `_IO_2_1_stdin_.buf_end`, for example it's address `+ 0x1000`,
 via `stdin` `_IO_FILE` functions, we'll can write data from `_IO_2_1_stdin_.buf_end` to `_IO_2_1_stdin_.buf_end + 0x1000`!
 
 ```text
