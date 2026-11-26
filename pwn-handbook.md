@@ -479,8 +479,6 @@ $1 = 0x555555559710 " \\\341\367\377\177"
 * Overlapping/pinched chunks can enable pointer overwrites (for `tcache`/`fastbin` poisoning), UAF-style reuse when an overlapping pointer remains live, or `main_arena` leaks if readable.
 * **Note on newer `glibc` (`>= 2.43`):** `tcache` initialization shifts to the first `free()` rather than first `malloc()`, and default per-bin capacity increases to `0x10` entries (counted down from `0x10` to `0x0`), meaning more frees are needed before chunks spill into the `unsorted` bin.
 
-Понял, без проблем - продолжаем! Сейчас аккуратно и чисто переформатируем раздел `4.8 Large Bin Attack` со всеми твоими подробностями, PoC, схемами, дампами памяти и обычным дефисом (`-`).
-
 ---
 
 ### 4.8 Large Bin Attack
