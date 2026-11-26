@@ -903,8 +903,6 @@ if (bck->fd != fwd)
 
 But... Block `if` doesn't include these macros. It actually means that we can just do tail insertion technique from `4.2.` ;)
 
-Без проблем, продолжаем оформление твоего портфолио (`CTF Player's Pwn Handbook`) в чистый Markdown с обычным дефисом (`-`) и сохранением всех твоих деталей, PoC, схем и дампов памяти.
-
 ---
 
 ### 4.9 Tcache Stashing Unlink Attack (`glibc >= 2.26`)
